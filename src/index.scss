@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap";
+@import "App.scss";
+
+$background-dark: #0a0f12;
+$default-white: #fff;
+
+body {
+  background-color: $background-dark;
+  color: $default-white;
+  font-family: sans-serif;
+}
