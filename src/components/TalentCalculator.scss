@@ -129,18 +129,18 @@ $sprite-frame-bottom: #6199d1;
   cursor: pointer;
 }
 
-.sprite-frame.active {
+.sprite-frame.equipted {
   box-shadow: 0 0 5px rgba(255, 255, 255, .5);
 }
 
-.sprite-frame.inactive {
+.sprite-frame.un-equipted {
   filter: grayscale(100%);
   div {
     background-position-y: 50px;
   }
 }
 
-.sprite-frame.inactive:hover {
+.sprite-frame.un-equipted.equipable:hover {
   div {
     background-position-y: 0px;
   }

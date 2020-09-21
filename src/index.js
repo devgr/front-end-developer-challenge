@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './App';
+import store from './state/store';
+import { Provider } from 'react-redux';
+import TalentCalculator from './components/TalentCalculator';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <TalentCalculator />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

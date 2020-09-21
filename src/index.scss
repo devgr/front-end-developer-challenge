@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
-@import "App.scss";
+@import "components/TalentCalculator.scss";
+@import "components/TalentPath.scss";
+@import "components/Rune.scss";
+@import "components/Connector.scss";
+@import "components/PointCounter.scss";
 
 $background-dark: #0a0f12;
 $default-white: #fff;
