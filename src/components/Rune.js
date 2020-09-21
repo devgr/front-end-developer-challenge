@@ -13,10 +13,11 @@ function Rune(props) {
       dispatch(equipRune({ talentPathIndex: props.talentPathIndex, runeIndex: props.runeIndex }));
     }
   }
-  const secondaryClickRune = () => {
+  const secondaryClickRune = (e) => {
     if (isUnEquipable) {
       dispatch(unEquipRune({ talentPathIndex: props.talentPathIndex, runeIndex: props.runeIndex }));
     }
+    e.preventDefault(); // stop the context menu from being shown
   }
 
   let spriteFrameClasses = 'sprite-frame';

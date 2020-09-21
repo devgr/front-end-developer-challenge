@@ -5,9 +5,9 @@ import Connector from './Connector';
 function buildRunes(runesData, talentPathIndex) {
   const items = [];
   runesData.forEach((runeData, runeIndex) => {
-    items.push(<Rune {...{ runeData, runeIndex, talentPathIndex }} />);
+    items.push(<Rune {...{ runeData, runeIndex, talentPathIndex }} key={'r' + runeIndex} />);
     if (runeIndex < runesData.length - 1) {
-      items.push(<Connector isActive={runeData.isEquipted} />);
+      items.push(<Connector isActive={runeData.isEquipted} key={'c' + runeIndex} />);
     }
   })
   return items;

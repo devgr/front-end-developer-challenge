@@ -1,0 +1,24 @@
+.talent-path {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.talent-path-label-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $label-white;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+@include media-breakpoint-up(md) {
+  .talent-path-label-wrapper {
+    margin-bottom: 0;
+  }
+
+  .talent-path {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

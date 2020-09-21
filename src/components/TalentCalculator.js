@@ -16,7 +16,9 @@ function TalentCalculator() {
       </div>
       <div className="row">
         <div className="col-7 col-md-9">
-          {talentPaths.map((talentPath, index) => <TalentPath talentPathData={talentPath} talentPathIndex={index}/>)}
+          {talentPaths.map((talentPath, index) => 
+            <TalentPath talentPathData={talentPath} talentPathIndex={index} key={index} />
+          )}
         </div>
         <PointCounter />
       </div>

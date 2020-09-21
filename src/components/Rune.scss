@@ -1,0 +1,74 @@
+%sprite {
+  width: 50px;
+  height: 50px;
+}
+
+.sprite-chevrons {
+  @extend %sprite;
+  background: url('/talent-icons-sprite.png') 0 0;
+}
+.sprite-utensils {
+  @extend %sprite;
+  background: url('/talent-icons-sprite.png') -50px 0;
+}
+.sprite-cake {
+  @extend %sprite;
+  background: url('/talent-icons-sprite.png') -100px 0;
+}
+.sprite-crown {
+  @extend %sprite;
+  background: url('/talent-icons-sprite.png') -150px 0;
+}
+.sprite-ship {
+  @extend %sprite;
+  background: url('/talent-icons-sprite.png') -200px 0;
+}
+.sprite-diver {
+  @extend %sprite;
+  background: url('/talent-icons-sprite.png') -2500px 0;
+}
+.sprite-lightning {
+  @extend %sprite;
+  background: url('/talent-icons-sprite.png') -300px 0;
+}
+.sprite-skull {
+  @extend %sprite;
+  background: url('/talent-icons-sprite.png') -350px 0;
+}
+
+.sprite-frame {
+  height: 58px;
+  width: 58px;
+  background: linear-gradient(0deg, $sprite-frame-bottom, $sprite-frame-lower 46%, $sprite-frame-middle 50%, $sprite-frame-top);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.sprite-frame:hover {
+  cursor: pointer;
+}
+
+.sprite-frame.equipted {
+  box-shadow: 0 0 5px rgba(255, 255, 255, .5);
+}
+
+.sprite-frame.un-equipted {
+  filter: grayscale(100%);
+  div {
+    background-position-y: 50px;
+  }
+}
+
+.sprite-frame.un-equipted.equipable:hover {
+  div {
+    background-position-y: 0px;
+  }
+}
